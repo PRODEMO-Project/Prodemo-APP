@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "499594900707",
+    "project_id": "prodemo-3f8d3",
+    "storage_bucket": "prodemo-3f8d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:499594900707:android:26477c6a50241c117c01d6",
+        "android_client_info": {
+          "package_name": "com.kapusons.prodemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "499594900707-g6f9j1u65kh2a5qs0ou9291mng8gajjr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kapusons.prodemo",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "499594900707-srjvnmmatan9t2miclkmmgfmcpahtuqd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kapusons.prodemo",
+            "certificate_hash": "ef266f1ece70fc26ec9fc91eb27629d0a2867b83"
+          }
+        },
+        {
+          "client_id": "499594900707-u05iptrnpuq3jgl4b4cvdapg96h2ak06.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzAn1ye47ypXx2mffRdRRZU8wSSoBaFb0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "499594900707-9v0s973iosvhrkm9ejohofargnvui8qd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "499594900707-n87i4iq6ah2d3vb31bus866ba07v64vd.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.kapusons.prodemo"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

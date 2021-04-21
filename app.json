@@ -1,0 +1,16 @@
+{
+  "expo": {
+    "name": "PRODEMO",
+    "slug": "PRODEMO",
+    "icon": "./assets/icon.png",
+    "version": "1.0.1",
+    "ios": {
+      "bundleIdentifier": "com.kapusons.prodemo",
+      "buildNumber": "1.0.1"
+    },
+    "android": {
+      "package": "com.kapusons.prodemo",
+      "versionCode": 1
+    }
+  }
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resources>
+  <string name="app_name">PRODEMO</string>
+  <string name="facebook_app_id">139036338064084</string>
+  <string name="fb_login_protocol_scheme">fb139036338064084</string>
+</resources>

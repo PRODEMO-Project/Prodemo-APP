@@ -1,0 +1,2 @@
+package_name("com.kapusons.prodemo")
+json_key_file(ENV['GOOGLE_KEYS_FILE'])

@@ -1,0 +1,45 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+fastlane_require 'dotenv'
+
+before_all do
+  Dotenv.overload '../../.env'
+end
+
+default_platform(:android)
+
+platform :android do
+
+  desc "Deploy a new version to the Google Play"
+  lane :beta do
+    ensure_git_branch(branch: 'v2')
+    increment_version_code gradle_build: 'app/build.gradle'
+    gradle(task: "clean bundle", build_type: "Release")
+    upload_to_play_store(track: 'internal') # track internal e soprattutto release_status finchè il progetto è in draft su google play
+  end
+
+  desc "Deploy a new version to the Google Play"
+  lane :deploy do
+    ensure_git_branch(branch: 'develop')
+    increment_version_code gradle_build: 'app/build.gradle'
+    gradle(task: "clean bundle", build_type: "Release")
+    upload_to_play_store(track: 'internal') # track internal e soprattutto release_status finchè il progetto è in draft su google play
+  end
+
+  def increment_version_code(gradle_build: 'app/build.gradle')
+    sh %Q{cd ../ && echo "$(awk '{sub(/versionCode [[:digit:]]+$/,"versionCode "$2+1)}1' #{gradle_build})" > #{gradle_build} && cd -}
+  end
+end
